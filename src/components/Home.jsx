@@ -5,6 +5,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaYoutube,
+  FaArrowLeft,
 } from "react-icons/fa";
 import Header from "../common/Header";
 
@@ -24,52 +25,67 @@ const Home = () => {
             I'm a <span></span>
           </h3>
           <p>
-            Hey there! I’m Leo, a passionate software developer with a knack
-            for turning complex problems into elegant solutions. I’m always up for a
-            challenge and love collaborating on exciting project. Let’s connect and see where our shared
-            interests can take us!
+            Hey there! I’m Harsha, a passionate software developer with a knack
+            for turning complex problems into elegant solutions. I’m always up
+            for a challenge and love collaborating on exciting projects. Let’s
+            connect and see where our shared interests can take us!
           </p>
           <div className="social-icons">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sai-harsha-vardhan-pittada-8a9a74252/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/leocodeio"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/leocodeio"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaTwitter />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/leocodeio"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/@leocodeio"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaYoutube />
             </a>
           </div>
-
-          <a href="https://www.youtube.com" className="btn">
-            Hire me
-          </a>
+          <div style={{ display: "flex" }}>
+            <a href="https://www.youtube.com" className="btn">
+              Hire me
+            </a>
+            <div
+              className="resume-link"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginLeft: "10px",
+                fontSize: "20px",
+                fontWeight: "bold",
+                justifyContent: "center",
+              }}
+            >
+              <FaArrowLeft style={{ marginRight: "5px" }} />
+              <span>Resume</span>
+            </div>
+          </div>
         </div>
       </div>
     </>
