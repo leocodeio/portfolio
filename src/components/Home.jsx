@@ -15,20 +15,20 @@ const Home = () => {
       <Header />
       <div className="home">
         <div className="home-img">
-          <img src="trails2.png" alt="Harsha" />
+          <img src="trail7.png" alt="Harsha" />
         </div>
         <div className="home-content">
           <h1>
-            Hi, It's <span>Harsha</span>
+            Hi, I’m <span>Harsha</span>
           </h1>
           <h3 className="typing-text">
             I'm a <span></span>
           </h3>
           <p>
-            Hey there! I’m Harsha, a passionate software developer with a knack
-            for turning complex problems into elegant solutions. I’m always up
-            for a challenge and love collaborating on exciting projects. Let’s
-            connect and see where our shared interests can take us!
+            Hey there! Harsha, a passionate software developer with a knack for
+            turning complex problems into elegant solutions. I’m always up for a
+            challenge and love collaborating on exciting projects. Let’s connect
+            and see where our shared interests can take us!
           </p>
           <div className="social-icons">
             <a
@@ -83,7 +83,7 @@ const Home = () => {
               }}
             >
               <FaArrowLeft style={{ marginRight: "5px" }} />
-              <span>Resume</span>
+              <span>Connect</span>
             </div>
           </div>
         </div>

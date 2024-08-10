@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,22 +21,46 @@ const Header = () => {
       <FaBars className="menu-icon" onClick={toggleMenu} />
 
       <nav className={isMenuOpen ? "active" : ""}>
-        <Link to="/" className={isActive("/") ? "active" : ""} onClick={toggleMenu}>
+        <Link
+          to="/"
+          className={isActive("/") ? "active" : ""}
+          onClick={toggleMenu}
+        >
           Home
         </Link>
-        <Link to="/services" className={isActive("/services") ? "active" : ""} onClick={toggleMenu}>
+        <Link
+          to="/services"
+          className={isActive("/services") ? "active" : ""}
+          onClick={toggleMenu}
+        >
           Services
         </Link>
-        <Link to="/skills" className={isActive("/skills") ? "active" : ""} onClick={toggleMenu}>
+        <Link
+          to="/skills"
+          className={isActive("/skills") ? "active" : ""}
+          onClick={toggleMenu}
+        >
           Skills
         </Link>
-        <Link to="/education" className={isActive("/education") ? "active" : ""} onClick={toggleMenu}>
+        <Link
+          to="/education"
+          className={isActive("/education") ? "active" : ""}
+          onClick={toggleMenu}
+        >
           Education
         </Link>
-        <Link to="/experience" className={isActive("/experience") ? "active" : ""} onClick={toggleMenu}>
+        <Link
+          to="/experience"
+          className={isActive("/experience") ? "active" : ""}
+          onClick={toggleMenu}
+        >
           Experience
         </Link>
-        <Link to="/contact" className={isActive("/contact") ? "active" : ""} onClick={toggleMenu}>
+        <Link
+          to="/contact"
+          className={isActive("/contact") ? "active" : ""}
+          onClick={toggleMenu}
+        >
           Contact
         </Link>
       </nav>
