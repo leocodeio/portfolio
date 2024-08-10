@@ -30,7 +30,7 @@ const ContactMe = () => {
         message: formData.message,
       },
     };
-    console.log(emailData)
+    // console.log(emailData)
     try {
       const response = await axios.post(
         "https://api.emailjs.com/api/v1.0/email/send",
