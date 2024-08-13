@@ -68,7 +68,7 @@ const Home = () => {
             </a>
           </div>
           <div style={{ display: "flex" }}>
-            <a href="https://www.youtube.com" className="btn">
+            <a href="https://drive.google.com/file/d/1xS3EYL80qoEzinq8HGOWW-eCsNruX64x/view?usp=sharing" className="btn">
               Hire me
             </a>
             <div
