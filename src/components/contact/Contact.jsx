@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "../../common/Header";
 import "./Contact.css";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -65,6 +72,43 @@ const ContactMe = () => {
     <>
       <Header />
       <section className="contact-section">
+        <div className="social-icons">
+          <a
+            href="https://www.linkedin.com/in/sai-harsha-vardhan-pittada-8a9a74252/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/leocodeio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://x.com/leocodeio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://www.instagram.com/leocodeio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.youtube.com/@leocodeio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube />
+          </a>
+        </div>
         <h2>Contact Me</h2>
         <form onSubmit={sendEmail}>
           <div className="form-group">
@@ -102,7 +146,15 @@ const ContactMe = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="submit-btn">
+          <button
+            type="submit"
+            disabled={
+              formData.name === "" ||
+              formData.email === "" ||
+              formData.message === ""
+            }
+            className="submit-btn"
+          >
             Send Message
           </button>
         </form>

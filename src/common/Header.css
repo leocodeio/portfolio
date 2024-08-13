@@ -1,0 +1,115 @@
+/* Header styles */
+header {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  padding:20px;
+  padding-right: 60px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background-color 0.5s ease;
+}
+
+header.scrolled {
+  background-color: black; 
+}
+
+.logo {
+  font-size: 3rem;
+  margin-left: 140px;
+  color: #b74b4b;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation styles */
+nav a {
+  font-size: 1.8rem;
+  color: white;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  color: #b74b4b;
+  border-bottom: 3px solid #b74b4b;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media queries */
+@media (max-width: 995px) {
+  .menu-icon {
+    display: block;
+  }
+  .logo{
+    margin-left: 20px;
+  }
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: 50%;
+    height: 500px;
+    border-left: 3px solid #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+    border-bottom-left-radius: 2rem;
+    padding: 2rem;
+    background-color: #161616;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  nav.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  nav.active a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  nav a:hover,
+  nav a.active {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #b74b4b;
+  }
+
+  nav a:hover {
+    background-color: #252525; /* Slight background change on hover */
+    transform: translateX(10px); /* Slide effect on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+}
+

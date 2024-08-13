@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-
+import "./Header.css";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
   const toggleMenu = () => {
@@ -12,8 +13,24 @@ const Header = () => {
 
   const isActive = (path) => location.pathname === path;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        // Adjust the scroll position as needed
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={isScrolled ? "scrolled" : ""}>
       <Link to="/" className="logo">
         Harsha
       </Link>
@@ -27,6 +44,13 @@ const Header = () => {
           onClick={toggleMenu}
         >
           Home
+        </Link>
+        <Link
+          to="/projects"
+          className={isActive("/projects") ? "active" : ""}
+          onClick={toggleMenu}
+        >
+          Projects
         </Link>
         <Link
           to="/services"
@@ -43,11 +67,11 @@ const Header = () => {
           Skills
         </Link>
         <Link
-          to="/education"
-          className={isActive("/education") ? "active" : ""}
+          to="/a&a"
+          className={isActive("/a&a") ? "active" : ""}
           onClick={toggleMenu}
         >
-          Education
+          Achievements & Awards
         </Link>
         <Link
           to="/experience"
