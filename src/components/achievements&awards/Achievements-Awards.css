@@ -30,7 +30,7 @@
 .achievements-awards-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;;
+  align-items: center;
   gap: 1rem;
   padding: 2rem;
   border-radius: 1rem;
