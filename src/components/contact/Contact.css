@@ -1,6 +1,5 @@
 /* Contact Me Page Styles */
 .contact-section {
-  margin-top: 75px;
   min-height: 100vh;
   padding: 5rem 9%;
   display: flex;
@@ -10,9 +9,9 @@
   background-color: black;
   color: white;
 }
-.contact-section .social-icons
-{
+.contact-section .social-icons {
   margin-left: 1rem;
+  margin-top: 20px;
 }
 
 .contact-section .social-icons a {

@@ -46,6 +46,13 @@ const Header = () => {
           Home
         </Link>
         <Link
+          to="/projects"
+          className={isActive("/projects") ? "active" : ""}
+          onClick={toggleMenu}
+        >
+          Projects
+        </Link>
+        <Link
           to="/services"
           className={isActive("/services") ? "active" : ""}
           onClick={toggleMenu}
@@ -60,11 +67,11 @@ const Header = () => {
           Skills
         </Link>
         <Link
-          to="/education"
-          className={isActive("/education") ? "active" : ""}
+          to="/a&a"
+          className={isActive("/a&a") ? "active" : ""}
           onClick={toggleMenu}
         >
-          Education
+          Achievements & Awards
         </Link>
         <Link
           to="/experience"

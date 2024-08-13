@@ -1,15 +1,7 @@
-import React from "react";
-import Header from "../../common/Header";
-import "./Education.css";
-
-const Education = () => {
-  return (
-    <>
-      <Header />
-      <section className="education-section">
-        <h2>Education</h2>
-        <div className="education-container">
-          <div className="education-item">
+<section className="achievement-section">
+        <h2>achievement</h2>
+        <div className="achievement-container">
+          <div className="achievement-item">
             <h3>Anil Neerukonda Institute Of Technologies And Sciences</h3>
             <span>BTech in Computer Science (DS)</span>
             <span>2021 – Present</span>
@@ -20,7 +12,7 @@ const Education = () => {
               and Algorithms.
             </p>
           </div>
-          <div className="education-item">
+          <div className="achievement-item">
             <h3>Narayana Junior College</h3>
             <span>Intermediate, MPC</span>
             <span>2019 – 2021</span>
@@ -30,7 +22,7 @@ const Education = () => {
               Aptitude and Reasoning.
             </p>
           </div>
-          <div className="education-item">
+          <div className="achievement-item">
             <h3>Sri Chaitanya Techno School</h3>
             <span>High School</span>
             <span>2018 – 2019</span>
@@ -41,8 +33,3 @@ const Education = () => {
           </div>
         </div>
       </section>
-    </>
-  );
-};
-
-export default Education;

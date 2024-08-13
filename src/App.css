@@ -186,9 +186,8 @@ span {
 @media (max-width: 995px) {
   .home {
     flex-direction: column;
-    margin: 5rem 4rem;
-    padding-bottom: 20px;
-  
+    padding: 20px;
+    padding-bottom: 40px;
   }
 
   .home .home-content h3 {
@@ -201,6 +200,6 @@ span {
 
   .home-img img {
     width: 70vw;
-    margin-top: 3rem;
+    margin-top: 100px;
   }
 }
