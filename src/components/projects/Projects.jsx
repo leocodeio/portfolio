@@ -10,7 +10,7 @@ const projects = [
       "Building Catalyst, a community platform designed to unite industrious individuals, offer cutting-edge technologies and services, and foster collaborative opportunities for emerging talent.",
     tools: "Node, React, MongoDB, Express, github pages, Vercel",
     imageUrl:
-      "https://i.pinimg.com/474x/3b/42/75/3b4275c84aa44d3ad505d2c687e08c66.jpg",
+      "https://i.pinimg.com/736x/3f/58/20/3f582064e15e2f13546b0603cef5b968.jpg",
     projectUrl: "https://bufferxleo.github.io/catalyst-frontend/",
   },
   {
