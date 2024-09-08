@@ -8,10 +8,10 @@ const projects = [
     title: "Catalyst",
     description:
       "Building Catalyst, a community platform designed to unite industrious individuals, offer cutting-edge technologies and services, and foster collaborative opportunities for emerging talent.",
-    tools: "Node, React, MongoDB, Express, github pages, Vercel",
+    tools: "Remix, Postgresql, Prisma, Vercel",
     imageUrl:
       "https://i.pinimg.com/736x/3f/58/20/3f582064e15e2f13546b0603cef5b968.jpg",
-    projectUrl: "https://bufferxleo.github.io/catalyst-frontend/",
+    projectUrl: "https://catalyst-com.vercel.app/",
   },
   {
     id: 1,
