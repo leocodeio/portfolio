@@ -21,7 +21,7 @@ const projects = [
     tools: "Node, React, PostgreSQL, Express, Render, Vercel",
     imageUrl:
       "https://i.pinimg.com/originals/49/f6/b3/49f6b314d7873260af254d54ff96af64.png",
-    projectUrl: "https://keerthana-essk.github.io/dod-frontend/",
+    projectUrl: "https://catalyst-domain-in-domain.vercel.app/",
   },
   {
     id: 2,
