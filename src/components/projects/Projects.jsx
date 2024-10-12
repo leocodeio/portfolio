@@ -23,8 +23,19 @@ const projects = [
       "https://i.pinimg.com/originals/49/f6/b3/49f6b314d7873260af254d54ff96af64.png",
     projectUrl: "https://catalyst-domain-in-domain.vercel.app/",
   },
+
   {
     id: 2,
+    title: "Cropto",
+    description:
+      "Cropto is a full-stack machine learning-based web application designed to predict crop success based on dependent factors.",
+    tools: "Remix, python, Hugging face, Vercel",
+    imageUrl:
+      "https://raw.githubusercontent.com/leocodeio/Cropto/refs/heads/main/public/favicon.ico",
+    projectUrl: "https://cropto-eight.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Tic-Tac-Toe",
     description:
       "A fully functional multiplayer Tic-Tac-Toe game with efficient user management and real-time gameplay.",
@@ -34,7 +45,7 @@ const projects = [
     projectUrl: "https://hatakexleo.github.io/tic-tac-toe/",
   },
   {
-    id: 3,
+    id: 4,
     title: "StarClassifier",
     description:
       "An image classification model integrated with a frontend UI, offering a user-friendly and responsive experience.",
@@ -45,15 +56,16 @@ const projects = [
     projectUrl: "https://github.com/hatakexleo/ImgClassifier",
   },
   {
-    id: 4,
+    id: 5,
     title: "AnimeSpam",
     description:
       "A service website for the anime editing community, allowing users to download available 4k upscaled twixtors.",
-    tools: "Node, React, MongoDB, Express, Render, Vercel",
+    tools: "Reat, TypeScript, Vercel",
     imageUrl:
       "https://i.pinimg.com/236x/b1/78/e8/b178e87dd4ac18d778028a057f7c5714.jpg",
-    projectUrl: "https://animespam.vercel.app/",
+    projectUrl: "https://anime-spam.vercel.app/",
   },
+
   // "https://i.pinimg.com/564x/8b/48/a5/8b48a5dab7ad4a9fb026111f029c5210.jpg",
 ];
 
