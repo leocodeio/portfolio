@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../common/Header";
 import "./Achievements-Awards.css";
 import { IoLinkSharp } from "react-icons/io5";
 
@@ -45,7 +44,6 @@ const educationData = [
 const AchievementsAwards = () => {
   return (
     <div>
-      <Header />
       <section className="achievements-awards-section">
         <h2>Achievements and Awards</h2>
         <div className="achievements-awards-container">

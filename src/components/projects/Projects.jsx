@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import Header from "../../common/Header";
 
 const projects = [
   {
@@ -72,7 +71,6 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <Header />
       <section className="projects-section">
         <h2 className="section-title">Projects</h2>
         <div className="projects-container">

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import "./Header.css";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +18,6 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // Adjust the scroll position as needed
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -31,62 +32,76 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "scrolled" : ""}>
-      <Link to="/" className="logo">
+      <RouterLink to="/" className="logo">
         Harsha
-      </Link>
+      </RouterLink>
 
       <FaBars className="menu-icon" onClick={toggleMenu} />
 
       <nav className={isMenuOpen ? "active" : ""}>
-        <Link
-          to="/"
+        <ScrollLink
+          to="home"
+          smooth={true}
+          duration={500}
           className={isActive("/") ? "active" : ""}
           onClick={toggleMenu}
         >
           Home
-        </Link>
-        <Link
-          to="/projects"
+        </ScrollLink>
+        <ScrollLink
+          to="projects"
+          smooth={true}
+          duration={500}
           className={isActive("/projects") ? "active" : ""}
           onClick={toggleMenu}
         >
           Projects
-        </Link>
-        <Link
-          to="/services"
+        </ScrollLink>
+        <ScrollLink
+          to="services"
+          smooth={true}
+          duration={500}
           className={isActive("/services") ? "active" : ""}
           onClick={toggleMenu}
         >
           Services
-        </Link>
-        <Link
-          to="/skills"
+        </ScrollLink>
+        <ScrollLink
+          to="skills"
+          smooth={true}
+          duration={500}
           className={isActive("/skills") ? "active" : ""}
           onClick={toggleMenu}
         >
           Skills
-        </Link>
-        <Link
-          to="/a&a"
+        </ScrollLink>
+        <ScrollLink
+          to="a&a"
+          smooth={true}
+          duration={500}
           className={isActive("/a&a") ? "active" : ""}
           onClick={toggleMenu}
         >
           Achievements & Awards
-        </Link>
-        <Link
-          to="/experience"
+        </ScrollLink>
+        <ScrollLink
+          to="experience"
+          smooth={true}
+          duration={500}
           className={isActive("/experience") ? "active" : ""}
           onClick={toggleMenu}
         >
           Experience
-        </Link>
-        <Link
-          to="/contact"
+        </ScrollLink>
+        <ScrollLink
+          to="contact"
+          smooth={true}
+          duration={500}
           className={isActive("/contact") ? "active" : ""}
           onClick={toggleMenu}
         >
           Contact
-        </Link>
+        </ScrollLink>
       </nav>
     </header>
   );

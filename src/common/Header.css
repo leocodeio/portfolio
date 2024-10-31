@@ -4,6 +4,7 @@ header {
   position: fixed;
   width: 100vw;
   padding:20px;
+  height: 100px ;
   padding-right: 60px;
   background-color: transparent;
   display: flex;
@@ -13,13 +14,23 @@ header {
   transition: background-color 0.5s ease;
 }
 
+.primary-links{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.secondary-links{
+  display: flex;
+  align-items: center;
+}
+
 header.scrolled {
   background-color: black; 
 }
 
 .logo {
   font-size: 3rem;
-  margin-left: 140px;
   color: #b74b4b;
   font-weight: 800;
   cursor: pointer;
@@ -38,6 +49,7 @@ nav a {
   font-weight: 500;
   transition: 0.3s ease;
   border-bottom: 3px solid transparent;
+  cursor: pointer;
 }
 
 nav a:hover,

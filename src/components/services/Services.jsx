@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../common/Header";
 import { IoLinkSharp } from "react-icons/io5";
 import "./Services.css";
 
@@ -29,7 +28,6 @@ const servicesData = [
 const Services = () => {
   return (
     <div>
-      <Header />
       <section className="services-section">
         <h2>Services</h2>
         <div className="services-container">

@@ -1,11 +1,9 @@
 import React from "react";
 import "./Skills.css";
-import Header from "../../common/Header";
 
 const Skills = () => {
   return (
     <>
-      <Header />
       <section className="skills-section">
         <h2 className="section-title">Technologies and Skills</h2>
         <div className="skills-container">
